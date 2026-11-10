@@ -1,0 +1,55 @@
+# ==============================================================================
+# AI-Powered Real-Time Sign Language Recognition System
+# Python 3.11 required. Install with:
+#   pip install -r requirements.txt
+# ==============================================================================
+
+# --- Web framework ---
+Flask==3.0.3
+Werkzeug==3.0.3
+
+# --- Computer vision ---
+opencv-python==4.10.0.84
+mediapipe==0.10.14
+
+# --- Deep learning ---
+tensorflow==2.16.1
+keras==3.3.3
+
+# --- Data / ML utilities ---
+numpy==1.26.4
+scikit-learn==1.5.0
+matplotlib==3.9.0
+pandas==2.2.2
+
+# --- Emotion recognition ---
+deepface==0.0.93
+tf-keras==2.16.0        # deepface currently expects the standalone tf-keras package
+
+# --- NLP ---
+spacy==3.7.5
+language-tool-python==2.8
+transformers==4.42.3
+torch==2.3.1             # backend for transformers (CPU build is sufficient)
+
+# --- Speech ---
+SpeechRecognition==3.10.4
+pyttsx3==2.90
+pyaudio==0.2.14           # required for microphone access in the standalone demo
+                           # (Windows: pip install pipwin && pipwin install pyaudio
+                           #  if the wheel fails to build)
+pydub==0.25.1              # audio format conversion (webm/ogg -> wav) for uploaded clips
+
+# --- Database ---
+# sqlite3 ships with the Python standard library — no install needed.
+
+# --- Misc ---
+python-dotenv==1.0.1
+Pillow==10.3.0
+
+# After installing, download the spaCy English model:
+#   python -m spacy download en_core_web_sm
+#
+# LanguageTool (language-tool-python) requires a Java Runtime Environment
+# (JRE 8+) installed and on PATH; it downloads its language-check server
+# jar automatically on first use.
